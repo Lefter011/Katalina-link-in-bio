@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katalina Van-Ke-Tsin Links</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.BIRDS({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          colorMode: "lerp",
+          wingSpan: 24.0,
+          speedLimit: 4.0,
+          separation: 72.0,
+          alignment: 70.0,
+          cohesion: 35.0,
+          quantity: 4.0,
+          backgroundAlpha: 0.0,
+        });
+
+        setTimeout(() => {
+          const main = document.querySelector("main");
+          main.style.opacity = 1;
+          main.style.filter = "blur(0px)";
+        }, 1000);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="vanta">
+      <main>
+        <header>
+          <img src="./img/personal.jpeg" alt="personal photo" />
+          <h1>_____katalina____</h1>
+        </header>
+        <section>
+          <ul>
+            <li>
+              <a href="">
+                <img src="./img/homepage.svg" alt="homepage" width="20" />
+                Official Website Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/_____katalina____/"
+                ><img
+                  src="./img/instagram.svg"
+                  alt="instagram personal"
+                  width="20"
+                />
+                Instagram Personal</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/vanri_na/"
+                ><img
+                  src="./img/instagram.svg"
+                  alt="instagam titor dancer"
+                  width="20"
+                />
+                Instagram Tutor</a
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

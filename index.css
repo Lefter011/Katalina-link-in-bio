@@ -1,0 +1,109 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: url(./img/bg_2.webp) repeat center center fixed;
+  background-size: cover;
+}
+
+main {
+  opacity: 0;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  -webkit-transition: opacity 2s ease-in-out, -webkit-filter 2s ease-in-out;
+  transition: opacity 2s ease-in-out, -webkit-filter 2s ease-in-out;
+  transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+  transition: opacity 2s ease-in-out, filter 2s ease-in-out, -webkit-filter 2s ease-in-out;
+}
+
+header {
+  margin-top: 1em;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  width: 6em;
+  height: 6em;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  -webkit-box-shadow: rgb 28 32 93/28% 0px 2px 8px 0px;
+          box-shadow: rgb 28 32 93/28% 0px 2px 8px 0px;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 1em;
+  background-color: #000a;
+  color: #fff;
+  padding: 0.3em 0.6em;
+  border: 1px solid #fffa;
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+          backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+}
+
+section ul {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 480px;
+}
+
+section ul li {
+  background-color: #fffa;
+  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+          backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+  border-radius: 10em;
+  padding: 1em;
+  margin: 1.4em 0;
+  -webkit-box-shadow: rgb 28 32 93/28% 0px 2px 8px 0px;
+          box-shadow: rgb 28 32 93/28% 0px 2px 8px 0px;
+}
+
+section ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#vanta {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=index.css.map */
